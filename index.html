@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ultra Hard Maze Bot Race Fixed</title>
+<style>
+body { font-family: sans-serif; display:flex; flex-direction:column; align-items:center; margin-top:20px;}
+canvas { border:2px solid black; margin-bottom:10px;}
+#debugger { display:flex; gap:20px; flex-wrap:wrap;}
+.debug-section { display:flex; flex-direction:column; align-items:center;}
+.debug-canvas { border:1px solid black;}
+</style>
+</head>
+<body>
+
+<h1>Ultra Hard Maze Bot Race - Fixed</h1>
+<canvas id="mazeCanvas" width="600" height="600"></canvas>
+<div id="winner"></div>
+<div id="timeTaken"></div>
+
+<div id="debugger">
+  <div class="debug-section">
+    <h3>Red Bot View</h3>
+    <canvas id="redView" width="300" height="300" class="debug-canvas"></canvas>
+  </div>
+  <div class="debug-section">
+    <h3>Blue Bot View</h3>
+    <canvas id="blueView" width="300" height="300" class="debug-canvas"></canvas>
+  </div>
+  <div class="debug-section">
+    <h3>Maze Map</h3>
+    <canvas id="mapView" width="300" height="300" class="debug-canvas"></canvas>
+  </div>
+  <div class="debug-section">
+    <h3>Path Planner</h3>
+    <canvas id="pathView" width="300" height="300" class="debug-canvas"></canvas>
+  </div>
+</div>
+
+<script src="src/js/index.js"></script>
+</body>
+      </html>
